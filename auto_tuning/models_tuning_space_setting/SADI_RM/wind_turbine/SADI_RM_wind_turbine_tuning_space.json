@@ -1,0 +1,165 @@
+{
+  "n_steps": {
+    "_type": "choice",
+    "_value": [
+      72
+    ]
+  },
+  "n_features": {
+    "_type": "choice",
+    "_value": [
+      4
+    ]
+  },
+  "epochs": {
+    "_type": "choice",
+    "_value": [
+      100
+    ]
+  },
+  "patience": {
+    "_type": "choice",
+    "_value": [
+      10
+    ]
+  },
+  "max_epochs": {
+    "_type": "choice",
+    "_value": [1000]
+  },
+  "extension_threshold": {
+    "_type": "choice",
+    "_value": [10.0]
+  },
+  "batch_size": {
+    "_type": "choice",
+    "_value": [
+      32
+    ]
+  },
+  "n_layers": {
+    "_type": "choice",
+    "_value": [
+      1,
+      2,
+      3
+    ]
+  },
+  "d_model": {
+    "_type": "choice",
+    "_value": [
+      32,
+      64,
+      128
+    ]
+  },
+  "n_heads": {
+    "_type": "choice",
+    "_value": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "d_ffn": {
+    "_type": "choice",
+    "_value": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ]
+  },
+  "dropout": {
+    "_type": "choice",
+    "_value": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ]
+  },
+  "lr": {
+    "_type": "loguniform",
+    "_value": [
+      5e-05,
+      0.01
+    ]
+  },
+  "d_k": {
+    "_type": "choice",
+    "_value": [
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "d_v": {
+    "_type": "choice",
+    "_value": [
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "n_fde_layers": {
+    "_type": "choice",
+    "_value": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "d_diffusion_embedding": {
+    "_type": "choice",
+    "_value": [
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "n_diffusion_steps": {
+    "_type": "choice",
+    "_value": [
+      50
+    ]
+  },
+  "beta_start": {
+    "_type": "choice",
+    "_value": [
+      0.0001
+    ]
+  },
+  "beta_end": {
+    "_type": "choice",
+    "_value": [
+      0.5
+    ]
+  },
+  "schedule": {
+    "_type": "choice",
+    "_value": [
+      "quad"
+    ]
+  },
+  "n_sampling_times": {
+    "_type": "choice",
+    "_value": [
+      50
+    ]
+  },
+  "validation_sampling_times": {
+    "_type": "choice",
+    "_value": [
+      5
+    ]
+  }
+}

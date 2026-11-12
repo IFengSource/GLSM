@@ -1,0 +1,15 @@
+{
+    "n_steps":  {"_type":"choice","_value":[12]},
+    "n_features":  {"_type":"choice","_value":[13]},
+    "patience":  {"_type":"choice","_value":[10]},
+    "epochs":  {"_type":"choice","_value":[100]},
+    "patch_size":  {"_type":"choice","_value":[1]},
+    "patch_stride": {"_type":"choice","_value":[1]},
+    "downsampling_ratio": {"_type":"choice","_value":[2]},
+    "ffn_ratio": {"_type":"choice","_value":[1,8]},
+    "num_blocks": {"_type":"choice","_value":[[1]]},
+    "large_size": {"_type":"choice","_value":[[5],[9],[13],[17],[21]]},
+    "small_size": {"_type":"choice","_value":[[3],[5]]},
+    "dims":  {"_type":"choice","_value":[[32],[64],[128],[256],[512]]},
+    "lr":{"_type":"loguniform","_value":[0.00005,0.01]}
+}

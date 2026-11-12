@@ -1,0 +1,14 @@
+{
+    "n_steps":  {"_type":"choice","_value":[12]},
+    "n_features":  {"_type":"choice","_value":[13]},
+    "patience":  {"_type":"choice","_value":[10]},
+    "epochs":  {"_type":"choice","_value":[100]},
+    "n_layers": {"_type":"choice","_value":[1,2,3]},
+    "d_input_embed": {"_type":"choice","_value":[32,64,128]},
+    "d_learnable_embed": {"_type":"choice","_value":[32,64,128]},
+    "d_proj": {"_type":"choice","_value":[6,12,18,24]},
+    "d_ffn": {"_type":"choice","_value":[32, 64, 128, 256, 512]},
+    "n_temporal_heads": {"_type":"choice","_value":[1,2,4,8]},
+    "dropout":  {"_type":"choice","_value":[0,0.1,0.2,0.3,0.4,0.5]},
+    "lr":{"_type":"loguniform","_value":[0.00005,0.01]}
+}

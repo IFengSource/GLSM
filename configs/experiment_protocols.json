@@ -1,0 +1,41 @@
+{
+  "random_seeds": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+  ],
+  "selection": {
+    "algorithm": "random search",
+    "trial_budget": 100,
+    "missingness": "point",
+    "missing_rate": 0.5,
+    "criterion": "lowest validation loss"
+  },
+  "glsm": {
+    "training_remasking_rate": 0.2,
+    "ORT_weight": 1,
+    "MIT_weight": 1
+  },
+  "sadi": {
+    "selection_model": "SADI_RM",
+    "evaluation_model": "SADI_MPB",
+    "stages": [
+      "RM",
+      "MPB"
+    ],
+    "mpb_max_epochs": 100,
+    "mpb_patience": 10,
+    "partial_blackout_probability": 0.5,
+    "mask_draws": 1,
+    "resample_empty_target": false
+  },
+  "metrics": {
+    "scale": "training-standardized measurements",
+    "reported": [
+      "MAE",
+      "MSE"
+    ]
+  }
+}

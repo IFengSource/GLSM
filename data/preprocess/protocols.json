@@ -1,0 +1,108 @@
+{
+  "dataset_generation_seed": 2024,
+  "standardization": "per-variable training-only StandardScaler",
+  "time_coordinate": "(numeric_timestamp-training_start)//training_sampling_gap",
+  "evaluation_target": "originally observed and artificially hidden values only",
+  "datasets": {
+    "ETT_h1": {
+      "n_features": 7,
+      "n_steps": 48,
+      "sampling_interval_minutes": 60,
+      "split": {
+        "unit": "observed calendar months",
+        "train": 14,
+        "validation": 5,
+        "test": "remaining"
+      },
+      "block": {
+        "factor": 0.36,
+        "block_len": 6,
+        "block_width": 6
+      },
+      "subsequence_length": 36,
+      "point_missing_rates": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "nominal_block_rate": 0.5,
+      "subsequence_missing_rate": 0.5,
+      "stride": 48
+    },
+    "wind_turbine": {
+      "n_features": 4,
+      "n_steps": 72,
+      "sampling_interval_minutes": 10,
+      "split": {
+        "unit": "observed calendar days",
+        "train": 255,
+        "validation": 37,
+        "test": "remaining"
+      },
+      "block": {
+        "factor": 0.362,
+        "block_len": 8,
+        "block_width": 3
+      },
+      "subsequence_length": 54,
+      "point_missing_rates": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "nominal_block_rate": 0.5,
+      "subsequence_missing_rate": 0.5,
+      "stride": 72
+    },
+    "ItalyAir": {
+      "n_features": 13,
+      "n_steps": 12,
+      "sampling_interval_minutes": 60,
+      "split": {
+        "unit": "chronological rows",
+        "validation_rows": "round(0.2*N)",
+        "test_rows": "round(0.2*N)",
+        "train_rows": "N-2*round(0.2*N)"
+      },
+      "block": {
+        "factor": 0.07,
+        "block_len": 4,
+        "block_width": 4
+      },
+      "subsequence_length": 8,
+      "point_missing_rates": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "nominal_block_rate": 0.5,
+      "subsequence_missing_rate": 0.5,
+      "stride": 12
+    },
+    "GuangzhouTraffic": {
+      "n_features": 214,
+      "n_steps": 48,
+      "sampling_interval_minutes": 10,
+      "split": {
+        "unit": "complete days",
+        "train": 43,
+        "validation": 6,
+        "test": 12
+      },
+      "block": {
+        "factor": 0.0032,
+        "block_len": 6,
+        "block_width": 6
+      },
+      "subsequence_length": 36,
+      "point_missing_rates": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "nominal_block_rate": 0.5,
+      "subsequence_missing_rate": 0.5,
+      "stride": 48
+    }
+  }
+}
